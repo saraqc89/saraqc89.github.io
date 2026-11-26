@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Práctica 4 - Carita</title>
+<!-- Librería p5.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+
+<script>
+function setup() {
+  // 1. Lienzo de 400x400 pixeles
+  createCanvas(400, 400);
+  background(255);
+
+  // 2. Cabeza
+  noFill();
+  stroke(0);
+  strokeWeight(3);
+  circle(200, 200, 260);
+
+  // 3. Ojos
+  fill(0);
+  noStroke();
+  circle(160, 175, 20); // Ojo izquierdo
+  circle(240, 175, 20); // Ojo derecho
+
+  // 4. Sonrisaaa
+  noFill();
+  stroke(0);
+  strokeWeight(3);
+  arc(200, 210, 150, 120, 0, PI);
+
+  // cejas sencillas
+  stroke(0);
+  strokeWeight(2);
+  arc(150, 150, 40, 20, PI, TWO_PI); 
+  arc(240, 150, 40, 20, PI, TWO_PI);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+0<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 5 - Mi creación estática</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+<script>
+function setup() {
+  createCanvas(800, 600);
+  background(135, 206, 235);
+
+
+  // 1. Fondo y elementos lejanos.
+
+   //Cesped verde
+      fill(117, 142, 105);
+      rect(0, 510, 800, 510)
+
+   //arbol
+       fill(86, 43, 5);
+      rect(100, 330, 40, 180)
+      noStroke()
+      fill(117, 140, 100)
+      circle(120, 300, 160);
+
+   //sol
+   fill(255, 238, 140);
+  arc(0, 0, 300, 300, 0, HALF_PI);
+
+
+  // 2. Figuras principales.
+
+   //Casa
+  stroke(0);
+  strokeWeight(2)
+  fill(235, 221, 204); 
+  rect(280, 510, 280, -190);
+
+  fill(134, 70, 58); 
+  triangle(270, 320, 570, 320, 420, 200);
+
+  fill(139, 69, 19); 
+  rect(390, 510, 60, -90);
+
+  //perro 
+  fill(0);
+  ellipse(680, 450, 80, 55);
+  circle(640, 420, 45);
+  circle(615, 425, 20);
+  ellipse(650, 395, 10, 24, Math.PI/ 6);
+  strokeWeight(6);
+  line(720, 445, 745, 420, 8);
+  line(660, 470, 660, 520, 8);
+  line(650, 470, 640, 520, 12);
+  line(700, 470, 700, 520, 12);
+  line(710, 470, 710, 520, 12);
+
+  // 3. Detalles y acabados.
+
+  //manzanas
+      stroke(0);
+      strokeWeight(2);
+      line(80, 280, 80, 290);
+      line(150, 300, 150, 310);
+      line(90, 340, 90, 350);
+
+ fill(134, 30, 23);
+noStroke()
+ ellipse(80, 290, 20, 10);
+  ellipse(150, 310, 20, 10);
+  ellipse(90, 350, 20, 10);
+}
+</script>
+</body>
+</html>
