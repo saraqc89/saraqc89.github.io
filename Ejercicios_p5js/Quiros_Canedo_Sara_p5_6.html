@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 6 - Mi póster</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+<script>
+function setup() {
+  createCanvas(800, 500);  // Tamaño inicial del lienzo
+  background(255, 192, 203);
+  noStroke();
+
+
+  // Título situado en el centro horizontal (640 / 2 = 320).
+  textSize(28);
+  textAlign(CENTER, TOP);
+  fill(97, 64, 81);
+  text("Lamine Yamal", 320, 16);
+
+
+  // Subtítulo: sigue centrado en x = 320.
+  textSize(16);
+  fill(28);
+  text("Joven prodigio", 320, 52);
+
+
+  // Etiquetas próximas a las cuatro esquinas.
+  textSize(12);
+  fill(0);
+  textAlign(LEFT, TOP);
+  text("(0, 0)", 6, 6);
+
+
+  textAlign(RIGHT, TOP);
+  text("(640, 0)", 634, 6);
+
+
+  textAlign(LEFT, BOTTOM);
+  text("(0, 360)", 6, 354);
+
+
+  textAlign(RIGHT, BOTTOM);
+  text("(640, 360)", 634, 354);
+
+
+  // Centro geométrico indicado con números fijos.
+  textAlign(CENTER, CENTER);
+  textSize(12);
+  fill(30);
+  text("Centro (320, 180)", 320, 180);
+
+  fill(45, 123, 90)
+  text("Con tal solo 16 años, debutó en el Fc Barcelona", 160, 120);
+  text("Con 18 años ganó un Mundial", 550, 120);
+  text("Ganó 3 premios joven en la Gala del Balón de Oro", 160, 240);
+  text("En una palabra: insuperable", 550, 240);
+  text("Humildad y talento", 320, 310);
+}
+</script>
+</body>
+</html>
